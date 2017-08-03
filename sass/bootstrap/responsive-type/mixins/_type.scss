@@ -1,0 +1,35 @@
+
+//-- screens wider than 768px --
+@mixin notebook {
+  @media only screen and (min-width: $screen-tablet) {
+    @content;
+  }
+}
+
+//-- screens wider than 992px --
+@mixin desktop {
+  @media only screen and (min-width: $screen-desktop) {
+    @content;
+  }
+}
+
+//-- screens wider than 1200px --
+@mixin large-desktop {
+  @media only screen and (min-width: $screen-lg-desktop) {
+    @content;
+  }
+}
+
+//-- screens in landscape mode--
+@mixin landscape-phone {
+  @media screen  and (orientation: landscape) {
+    @content;
+  }
+}
+
+//-- screens wider than 667px in landscape  mode--
+@mixin landscape-tablet {
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    @content;
+  }
+}
